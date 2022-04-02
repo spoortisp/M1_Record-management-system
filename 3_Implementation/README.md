@@ -35,7 +35,7 @@ struct Stud
     char name[100];
     char dept[50];
     int roll;
-    float sgpa[12];
+    float sgpa[8];
     float cgpa;
 };
 
@@ -44,7 +44,7 @@ int main()
 {
     int ch,id,k,i;
     char c,add,pas[50];
-    SetConsoleTitle("Student Management System | VTU");
+    SetConsoleTitle("Student Record Management System | VTU");
     FILE * fp;
     Student s;
     int option;
