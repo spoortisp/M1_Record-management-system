@@ -239,15 +239,15 @@ void add(FILE * fp)
         printf("\n\n\t\tEnter Roll number: ");
         scanf("%d",&s.roll);
 
-        printf("\n\n\tEnter SGPA for 12 semesters\n");
-        for(i=0,cgpa=0; i<12; i++)
+        printf("\n\n\tEnter SGPA for 8 semesters\n");
+        for(i=0,cgpa=0; i<8; i++)
         {
             scanf("%f",&s.sgpa[i]);
             cgpa+=s.sgpa[i];
 
         }
 
-        cgpa/=12.0;
+        cgpa/=8.0;
         s.cgpa=cgpa;
 
         fwrite(&s,sizeof(s),1,fp);
